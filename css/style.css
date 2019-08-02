@@ -1,14 +1,39 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+
+
+
+
+/* -------------VARIABLES--------- */
+:root
+{
+    --green-color: #7ACC2D;
+    --white-color: white;
+    --black-color: black;
+   /* ------Typography-------  */
+    --normal: 12px;
+    /* -------Space----------- */
+    --space:10px;
+    /* ----------Box shadow-------- */
+    --box: 0 1px #c1bcbc;
+
+}
 html, body
 {
     padding: 0;
     margin: 0;
-    font-size: 12px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
 }
 nav
 {
     display: flex;
-    color: white;
-    background-color: darkblue;
+    color: var(--white-color);
+    background-color:var(--green-color) ;
     font-family: Helvetica, sans-serif;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +53,12 @@ nav ul
  }
  nav li a 
  {
-     color: black;
+     color:var(--black-color);
      text-decoration: none;
  }
  nav li a:hover
  {
-    color: white;
+    color: var(--white-color);
  }
 
  /* ---------Main section---------------------- */
@@ -56,15 +81,15 @@ nav ul
  }
  .product
  {
-     padding: 10px;
+     padding: var(--space);
     margin-top: -240px;
 
  }
  .product .content
  {
-     background-color: white;
+     background-color: var(--white-color);
      padding: 15px;
-     box-shadow:  0 1px #c1bcbc;
+     box-shadow:  var(--box);
      
  }
 
@@ -75,11 +100,11 @@ nav ul
 
  .main_button
  {
-     background-color: #7ACC2D;
+     background-color: var(--green-color);
      width: 100%;
      padding: 10px;
      font-size: 17px;
-     color: white;
+     color: var(--white-color);
      border: 0;
      cursor: pointer;
      border-radius: 2px;
