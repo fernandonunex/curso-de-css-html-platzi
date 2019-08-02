@@ -50,17 +50,41 @@ nav ul
         height: 200px;
         background-size: cover;
         background-position: center top;
-        padding: 15%;
+        padding: 20%;
         display: flex;
     
  }
  .product
  {
      padding: 10px;
+    margin-top: -240px;
+
  }
  .product .content
  {
      background-color: white;
-     padding: 20px;
+     padding: 15px;
+     box-shadow:  0 1px #c1bcbc;
      
+ }
+
+ .image_product
+ {
+     text-align: center;
+ }
+
+ .main_button
+ {
+     background-color: #7ACC2D;
+     width: 100%;
+     padding: 10px;
+     font-size: 17px;
+     color: white;
+     border: 0;
+     cursor: pointer;
+     border-radius: 2px;
+ }
+ .main_button:hover
+ {
+     background-color: #64921d;
  }
