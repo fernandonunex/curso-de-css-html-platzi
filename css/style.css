@@ -1,6 +1,14 @@
 
 
 
+.wrapper
+{
+    width: 1280px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 
@@ -67,6 +75,8 @@ nav ul
  {
      padding: 15%;
      text-align: center;
+     font-size: 30px;
+     font-weight: bold;
     }
     
     .products
@@ -113,3 +123,45 @@ nav ul
  {
      background-color: #64921d;
  }
+
+ /* -------------------brand----------------------- */
+ .brand
+ {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+ .fetures
+ {
+    /* border: 1px solid red;    */
+    width: 180px;
+    height: 300px;
+    
+ }
+
+ .wrapperimg 
+ {
+    /* border: 1px solid red; */
+    height: 130px;
+    width: 150px;
+    display: flex;
+    /* margin: auto; */
+    
+ }
+ .feture
+ {
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-bottom: 0px;
+ }
+
+ .description_feture
+ {
+     margin-top: 5px;
+    /* border: 1px solid red; */
+    font-size: 12px;
+    /* text-align: left; */
+ }
+
+
