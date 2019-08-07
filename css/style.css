@@ -148,6 +148,7 @@ nav ul
     display: flex;
     /* margin: auto; */
     
+    
  }
  .feture
  {
@@ -162,6 +163,48 @@ nav ul
     /* border: 1px solid red; */
     font-size: 12px;
     /* text-align: left; */
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
  }
 
+/* --------------Mentions section------------------- */
 
+.mentions
+{
+    height: 600px;
+    text-align: center;
+    
+}
+.title_mentions
+{
+    font-size: 30px;
+    text-align: center;
+    margin: 100px 0;
+
+}
+.mention_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.mention
+{
+    /* border: 1px solid ; */
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 2px;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+    box-shadow:  1px 2px #c1bcbc;
+    
+}
+
+.wrapper_ment_img
+{
+    /* border: 1px solid red; */
+    width: 250px;
+}
