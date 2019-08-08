@@ -165,3 +165,26 @@ nav ul
  }
 
 
+ .footer
+ {
+     height: 100px;
+     background-color: #313337;
+     font-family:'Open Sans', sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid red;
+     
+    }
+    
+    .linkfooter
+    {
+        font-size: var(--normal);
+        display: inherit;
+        text-decoration-line: none;
+        color: white;
+        /* align-content: space-between; */
+        margin: 0 10px;
+
+ }
+
