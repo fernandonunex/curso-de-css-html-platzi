@@ -1,233 +1,165 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
 
-
-
-.wrapper
-{
-    width: 1280px;
-    border: 1px solid red;
-    margin: auto;
+/*------ Variables */
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
-
-
-
-
-
-/* -------------VARIABLES--------- */
-:root
-{
-    --green-color: #7ACC2D;
-    --white-color: white;
-    --black-color: black;
-   /* ------Typography-------  */
-    --normal: 12px;
-    /* -------Space----------- */
-    --space:10px;
-    /* ----------Box shadow-------- */
-    --box: 0 1px #c1bcbc;
-
-}
-html, body
-{
-    padding: 0;
-    margin: 0;
-    font-size: var(--normal);
-    font-family: 'Open Sans', sans-serif;
-}
-nav
-{
-    display: flex;
-    color: var(--white-color);
-    background-color:var(--green-color) ;
-    font-family: Helvetica, sans-serif;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-} 
-
-nav ul
-{
-    display: flex;
-    
-}
- nav li
- {
-     padding: 0 20px;
-     list-style: none;
-     
- }
- nav li a 
- {
-     color:var(--black-color);
-     text-decoration: none;
- }
- nav li a:hover
- {
-    color: var(--white-color);
- }
-
- /* ---------Main section---------------------- */
-
- .main_section
- {
-     padding: 15%;
-     text-align: center;
-     font-size: 30px;
-     font-weight: bold;
-    }
-    
-    .products
-    {
-        background-image: url('../images/curve.png');
-        height: 200px;
-        background-size: cover;
-        background-position: center top;
-        padding: 20%;
-        display: flex;
-    
- }
- .product
- {
-     padding: var(--space);
-    margin-top: -240px;
-
- }
- .product .content
- {
-     background-color: var(--white-color);
-     padding: 15px;
-     box-shadow:  var(--box);
-     
- }
-
- .image_product
- {
-     text-align: center;
- }
-
- .main_button
- {
-     background-color: var(--green-color);
-     width: 100%;
-     padding: 10px;
-     font-size: 17px;
-     color: var(--white-color);
-     border: 0;
-     cursor: pointer;
-     border-radius: 2px;
- }
- .main_button:hover
- {
-     background-color: #64921d;
- }
-
- /* -------------------brand----------------------- */
- .brand
- {
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
- }
- .fetures
- {
-    /* border: 1px solid red;    */
-    width: 180px;
-    height: 300px;
-    
- }
-
- .wrapperimg 
- {
-    /* border: 1px solid red; */
-    height: 130px;
-    width: 150px;
-    display: flex;
-    /* margin: auto; */
-    
-    
- }
- .feture
- {
-    /* border: 1px solid red; */
-    text-align: left;
-    margin-bottom: 0px;
- }
-
- .description_feture
- {
-     margin-top: 5px;
-    /* border: 1px solid red; */
-    font-size: 12px;
-    /* text-align: left; */
-    font-size: var(--normal);
-    font-family: 'Open Sans', sans-serif;
- }
-
-/* --------------Mentions section------------------- */
-
-.mentions
-{
-    height: 600px;
-    text-align: center;
-    
-}
-.title_mentions
-{
-    font-size: 30px;
-    text-align: center;
-    margin: 100px 0;
-
-}
-.mention_container
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 100px 0;
+/* -------------------------------------------  */
+html, body{
+  margin:0;
+  padding: 0;
+  font-family: helvetica;
+  color: var(--black-color);
 }
 
-.mention
-{
-    /* border: 1px solid ; */
-    height: 250px;
-    width: 250px;
-    margin: 5px;
-    border-radius: 2px;
-    font-size: var(--normal);
-    font-family: 'Open Sans', sans-serif;
-    box-shadow:  1px 2px #c1bcbc;
-    
+p{
+  font-size: var(--normal);
 }
 
-.wrapper_ment_img
-{
-    /* border: 1px solid red; */
-    width: 250px;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
 }
- .footer
- {
-     height: 100px;
-     background-color: #313337;
-     font-family:'Open Sans', sans-serif;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     border: 1px solid red;
-     
-    }
-    
-    .linkfooter
-    {
-        font-size: var(--normal);
-        display: inherit;
-        text-decoration-line: none;
-        color: white;
-        /* align-content: space-between; */
-        margin: 0 10px;
 
- }
+nav a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
 
+nav a:hover{
+  color: var(--white-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+hr{
+  opacity: .2;
+}
+
+/* ------------------------------------------- MAIN SECTION */
+
+.main_section{
+  text-align: center;
+  padding: 15%;
+}
+
+/* -------------------------------------------  PRODUCTOS */
+
+.products{
+  background-image: url("../images/curve.png");
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+
+}
+
+.product{
+  padding: 20px;
+  margin-top: -226px;
+}
+
+.image-product{
+  text-align: center;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn{
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+}
+.main_btn:hover{
+  background-color: #63a426;
+}
+
+/* Beneficios */
+.beneficios{
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* Mentions */
+.mentions{
+  display: flex;
+  padding: 5%;
+}
+.mention img{
+  width: 100%;
+}
+h2.mention_title{
+  text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
